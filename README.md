@@ -55,7 +55,6 @@ Todos los `.m` están en **ASCII**, **una función por archivo**, sin `...` ni o
 
 ---
 
-
 ## Fórmulas de error (para “describir `h`”)
 
 - **Simpson 1/3 (malla uniforme):**
@@ -83,7 +82,7 @@ $$
 - **Estimación a posteriori (ambos, orden 4):**
 
 $$
-\text{err\_est} \approx \frac{|I_{2n}-I_{n}|}{2^{4}-1}=\frac{|I_{2n}-I_{n}|}{15}.
+\mathrm{err\_est} \approx \frac{|I_{2n}-I_{n}|}{2^{4}-1}=\frac{|I_{2n}-I_{n}|}{15}.
 $$
 
 ---
