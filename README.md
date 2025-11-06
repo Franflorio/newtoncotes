@@ -3,7 +3,6 @@
 Este repositorio reúne **scripts Octave/MATLAB** (compatibles con ambos) para integrar funciones y datos tabulados usando **Trapecios**, **Simpson 1/3**, **Simpson 3/8**, versiones **automáticas por tolerancia**, **a priori**, y **adaptativas**.  
 Todos los `.m` están en **ASCII**, **una función por archivo**, sin `...` ni operadores ternarios.
 
-> Origen de la info: no usé Internet; está basado en lo que trabajamos en la conversación y tus apuntes.
 
 ---
 
