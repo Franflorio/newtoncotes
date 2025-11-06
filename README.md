@@ -55,29 +55,36 @@ Todos los `.m` están en **ASCII**, **una función por archivo**, sin `...` ni o
 
 ---
 
+
 ## Fórmulas de error (para “describir `h`”)
 
-- **Simpson 1/3 (malla uniforme):**  
-  \[
-  |E| \le \frac{(b-a)}{180}\,h^{4}\,M_4,\quad M_4 \ge \max_{[a,b]}|f^{(4)}(x)|.
-  \]  
-  Despeje:  
-  \[
-  h \le \left(\frac{180\,\text{tol}}{(b-a)\,M_4}\right)^{1/4},\quad
-  n=\left\lceil\frac{b-a}{h}\right\rceil\;\text{(ajustar a **par**)}.
-  \]
+- **Simpson 1/3 (malla uniforme):**
 
-- **Simpson 3/8 (malla uniforme):**  
-  \[
-  |E| \le \frac{(b-a)}{80}\,h^{4}\,M_4 \Rightarrow
-  h \le \left(\frac{80\,\text{tol}}{(b-a)\,M_4}\right)^{1/4},\quad
-  n\ \text{múltiplo de **3**}.
-  \]
+$$
+|E| \le \frac{(b-a)}{180}\,h^{4}\,M_4,\quad M_4 \ge \max_{[a,b]}|f^{(4)}(x)|.
+$$
 
-- **Estimación a posteriori (ambos, orden 4):**  
-  \[
-  \text{err\_est} \approx \frac{|I_{2n}-I_{n}|}{2^{4}-1}=\frac{|I_{2n}-I_{n}|}{15}.
-  \]
+**Despeje:**
+
+$$
+h \le \left(\frac{180\,\text{tol}}{(b-a)\,M_4}\right)^{1/4},\quad
+n=\left\lceil\frac{b-a}{h}\right\rceil\ \text{(ajustar a par)}.
+$$
+
+- **Simpson 3/8 (malla uniforme):**
+
+$$
+|E| \le \frac{(b-a)}{80}\,h^{4}\,M_4
+\Rightarrow
+h \le \left(\frac{80\,\text{tol}}{(b-a)\,M_4}\right)^{1/4},\quad
+n\ \text{múltiplo de 3}.
+$$
+
+- **Estimación a posteriori (ambos, orden 4):**
+
+$$
+\text{err\_est} \approx \frac{|I_{2n}-I_{n}|}{2^{4}-1}=\frac{|I_{2n}-I_{n}|}{15}.
+$$
 
 ---
 
